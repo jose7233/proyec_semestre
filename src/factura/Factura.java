@@ -7,7 +7,7 @@ import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class Factura extends JFrame {
     private JList<String> list1;

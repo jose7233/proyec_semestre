@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class Panel3 extends JFrame {
     private JPanel panel3;

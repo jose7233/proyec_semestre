@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class UsuarioPubli extends JFrame {
     private JPanel panel2;

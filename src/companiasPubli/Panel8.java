@@ -9,7 +9,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.*;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class Panel8 extends JFrame {
     private JPanel panel8;

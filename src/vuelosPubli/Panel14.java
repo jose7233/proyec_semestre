@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class Panel14 extends JFrame {
     private JPanel panel14;

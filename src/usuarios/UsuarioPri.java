@@ -7,13 +7,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.*;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class UsuarioPri extends JFrame {
     private JPanel panel2;

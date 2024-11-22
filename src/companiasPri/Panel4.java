@@ -1,6 +1,5 @@
 package companiasPri;
 
-import factura.Datos;
 import factura.Datos2;
 import vuelosPri.Panel10;
 import javax.swing.*;
@@ -9,7 +8,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.*;
 
-import static conexion.Conexion.conectar;
+import static main.Conexion.conectar;
 
 public class Panel4 extends JFrame {
     private JPanel panel4;

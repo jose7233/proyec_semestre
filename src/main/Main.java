@@ -1,4 +1,4 @@
-package conexion;
+package main;
 
 import Inicio.*;
 
