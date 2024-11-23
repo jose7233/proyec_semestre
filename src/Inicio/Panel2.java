@@ -53,9 +53,6 @@ public class Panel2 extends JFrame {
                 Datos.setNombre(nombre);
 
 
-
-
-
                 if (seleccion == 0) {
                     new Panel4(idAeropuerto).setVisible(true);
                 } else if (seleccion == 1) {
