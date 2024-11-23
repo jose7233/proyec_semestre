@@ -6,7 +6,7 @@ import usuarios.UsuarioPubli;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.ActionListener; // se inicia desde el main o panel1
 
 public class Panel1 extends JFrame {
     private JButton privadoButton;
@@ -51,6 +51,9 @@ public class Panel1 extends JFrame {
             setOpaque(false);
             super.paint(g);
         }
+    }
+    public static void main(String[] args) {
+        new Panel1().setVisible(true);
     }
 
 }

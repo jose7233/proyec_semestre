@@ -43,8 +43,6 @@ public class Factura extends JFrame {
         guardarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                guardarDato();
                 new Final1().setVisible(true);
                 dispose();
             }
@@ -90,7 +88,7 @@ public class Factura extends JFrame {
         if (sudvencion != null) {
             listModel.addElement("sudvencion: " + sudvencion);
         } else {
-            listModel.addElement("Error.");
+            listModel.addElement("no tiene sudvencion");
         }
     }
 
@@ -123,26 +121,6 @@ public class Factura extends JFrame {
         }
     }
 
-    public void guardarDato() {
-        String query = "INSERT INTO Factura (idFactura, nombre, pasaporte, nacionalidad, nombreAeropuerto, nombreCompania, subvencion) VALUES (?, ?, ?, ?, ?, ?, ?)";
-
-        try (Connection con = conectar();
-             PreparedStatement pst = con.prepareStatement(query)) {
-
-            pst.setInt(1, nuevoId);
-            pst.setString(2, nombre);
-            pst.setString(3, pasaporte);
-            pst.setString(4, nacionalidad);
-            pst.setString(5, Datos.getNombre());
-            pst.setString(6, Datos2.getNombre());
-            pst.setString(7, Datos.getSubvencion());
-
-            pst.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            JOptionPane.showMessageDialog(this, "Error al guardar los datos: ");
-        }
-    }
 
     class Fondopanel extends JPanel {
         private Image imagen;

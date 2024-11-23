@@ -49,8 +49,6 @@ public class Panel3 extends JFrame {
 
                 String nombre = selectedValue.split("\\.")[1].split("\\(")[0].trim();
                 Datos.setNombre(nombre);
-                String sudvencion = selectedValue.split("\\.")[1].split("\\)")[1].trim();
-                Datos.setSubvencion(sudvencion);
 
                 if (seleccion == 0) {
                     new Panel7(idAeropuerto).setVisible(true);

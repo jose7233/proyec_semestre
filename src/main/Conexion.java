@@ -11,7 +11,7 @@ public class Conexion {
         Connection con = null;
         try {
             con = DriverManager.getConnection(url, user, pass);
-
+            System.out.println("conexion exitosa");
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Fallo en la conexión: " + e.getMessage());
