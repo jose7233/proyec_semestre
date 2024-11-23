@@ -59,6 +59,7 @@ public class Panel3 extends JFrame {
                     new Panel8(idAeropuerto).setVisible(true);
                 }
                 dispose();
+
             }
         });
     }
