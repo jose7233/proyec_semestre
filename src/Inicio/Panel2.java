@@ -52,8 +52,7 @@ public class Panel2 extends JFrame {
                 Datos.setNombre(nombre);
 
 
-                String subvencion = selectedValue.split("\\.")[1].split("\\)")[1].trim();
-                Datos.setSubvencion(subvencion);
+
 
                 if (seleccion == 0) {
                     new Panel4(idAeropuerto).setVisible(true);
