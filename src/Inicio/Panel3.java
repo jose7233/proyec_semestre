@@ -48,6 +48,7 @@ public class Panel3 extends JFrame {
                 idAeropuerto = Integer.parseInt(selectedValue.split("\\.")[0].trim());
 
 
+
                 String nombre = selectedValue.split("\\.")[1].split("\\(")[0].trim();
                 Datos.setNombre(nombre);
 
